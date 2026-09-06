@@ -81,3 +81,7 @@
 - 本模组遵循 **[MIT开源协议](MIT.LICENSE)**，请在**原作者** * **允许后** * 二次创作或整合
 ---
 使用愉快！
+---
+
+## 赞助
+[![Sponsor](https://img.shields.io/badge/赞助-爱发电-ea4aaa?style=for-the-badge)](https://afdian.com/a/GuaTianheMTR)

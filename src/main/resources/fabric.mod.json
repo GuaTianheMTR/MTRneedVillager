@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "mtrvilager",
+  "version": "2.6.0beta",
+  "name": "[MTRneedVillager]1.20.1fabric_2.6.0beta",
+  "description": "MTRneedVillager，让你的世界活起来！",
+  "authors": ["@呱瓜多米"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/mtrvilager/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mtr.vilager.passenger.gua.MTRneedvilager"
+    ]
+  },
+  "mixins": [
+    "mtrneedvilager.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "mtr": ">=4.0.0"
+  },
+  "suggests": {
+    "fabric-api": "*"
+  }
+}

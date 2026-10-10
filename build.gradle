@@ -1,0 +1,38 @@
+plugins {
+	id 'fabric-loom' version '1.10.5'
+}
+
+version = "2.6.0beta"
+group = "mtr.vilager.passenger.gua"
+
+base {
+	archivesName = "MTRneedVillager"
+}
+
+tasks.named('remapJar') {
+	archiveFileName = '[MTRneedVillager]1.20.1fabric_2.6.0beta.jar'
+}
+
+repositories {
+	// 腾讯云 Fabric 镜像
+	maven {
+		name = "Tencent Fabric"
+		url = "https://mirrors.cloud.tencent.com/fabric/"
+	}
+	mavenCentral()
+}
+
+dependencies {
+	minecraft "com.mojang:minecraft:1.20.1"
+	mappings "net.fabricmc:yarn:1.20.1+build.2:v2"
+
+	modImplementation "net.fabricmc:fabric-loader:0.15.11"
+
+	// 本地 MTR jar，Loom 会自动将其重映射到 yarn 命名空间
+	modImplementation files('libs/MTR-fabric-4.0.5+1.20.1.jar')
+}
+
+java {
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
+}

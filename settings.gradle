@@ -1,0 +1,10 @@
+// D:\sunfl\Desktop\MtrModPassengers\settings.gradle
+pluginManagement {
+	repositories {
+		maven {
+			name = "Fabric"
+			url = "https://maven.fabricmc.net/" // Fabric官方仓库
+		}
+		gradlePluginPortal() // 保留Gradle官方仓库（用于其他插件）
+	}
+}
